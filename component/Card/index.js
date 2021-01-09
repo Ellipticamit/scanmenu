@@ -5,7 +5,6 @@ function Card(props) {
     return (
         <div className={styles.card}>
             <div className={styles.cardimage}> 
-            <div className={styles.promo}> promoted </div>
             <img src="/logo_sample.png" alt="" />
             
             </div>
