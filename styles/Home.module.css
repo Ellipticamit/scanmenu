@@ -25,7 +25,14 @@
   box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
   font-weight: 400;
+  display: flex;
+  align-items: center;
 }
+
+.homelogo div {
+  margin: 5px;
+}
+
 
 .btnContainer {
   width: 80%;
@@ -119,4 +126,35 @@
 .payment h4 {
   margin-bottom: 12px;
   padding: 0px 15px;
+}
+
+.orderheader{
+ margin-bottom: 40px;
+ display: flex;
+ align-items: center;
+ height: 65px;
+ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.orderheader div{
+  padding: 7px;
+}
+
+.applypromo{
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  padding: 20px ;
+}
+
+.item_price{
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_banner{
+  margin-bottom: 30px;
 }
