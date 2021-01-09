@@ -5,6 +5,26 @@
   --btnshadow: '0px 4px 6px rgba(0, 0, 0, 0.1)';
 }
 */
+.flexrowcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexrow {
+  display: flex;
+  align-items: center;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sections {
+  padding: 0px 20px;
+}
 
 .container {
   height: 100vh;
@@ -117,15 +137,31 @@
   margin-top: -35px;
 }
 
+.paddingcontainer {
+  padding: 15px 20px;
+}
+
+.paytitle {
+  padding: 0px 20px;
+}
+
 .payment {
-  padding: 20px 5px;
+  padding: 10px 0px;
   position: relative;
   overflow: hidden;
 }
 
 .payment h4 {
   margin-bottom: 12px;
-  padding: 0px 15px;
+}
+
+.myslidercontainer {
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  height: 220px;
 }
 
 .orderheader{

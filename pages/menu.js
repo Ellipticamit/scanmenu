@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css';
 import Input from '../component/Input';
 import Offers from '../component/Offers';
 import MySlider from '../component/Slider';
+import Menu from '../component/Menu';
 
 export default function menu() {
   const offers = [1, 2, 3, 4, 5, 6];
@@ -19,16 +20,22 @@ export default function menu() {
       </section>
 
       <section className={styles.maincontent}>
-        <Input
-          name='location'
-          placeholder='Sanik Farm, New Delhi'
-          icon={true}
-          iconname='/search_icon.svg'
-          bg='white'
-        />
+        <article
+          className={`${styles.paddingcontainer} ${styles.maincontent} `}
+        >
+          <Input
+            name='location'
+            placeholder='Sanik Farm, New Delhi'
+            icon={true}
+            iconname='/search_icon.svg'
+            bg='white'
+          />
+        </article>
 
-        <div className={styles.payment}>
-          <h4>Payment Offers</h4>
+        <article className={styles.payment}>
+          <div className={styles.paytitle}>
+            <h4>Payment Offers</h4>
+          </div>
 
           <MySlider>
             {offers.map((item) => (
@@ -37,8 +44,14 @@ export default function menu() {
               </div>
             ))}
           </MySlider>
-        </div>
+        </article>
+        <article className={styles.paddingcontainer}>
+          <div className={styles.categoriesheader}>
+            <h4>All categories</h4>
+          </div>
+        </article>
       </section>
+      <Menu />
     </div>
   );
 }

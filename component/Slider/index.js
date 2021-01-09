@@ -18,7 +18,8 @@ function MySlider(props) {
           position: relative;
           display: block;
           box-sizing: border-box;
-          padding: 0px 20px;
+          padding: 0px 30px;
+          margin-left: -14px;
         }
         .slick-list {
           position: relative;
@@ -26,14 +27,8 @@ function MySlider(props) {
           margin: 0;
           padding: 0;
         }
-        .slick-slide {
-          background: yellow;
-          padding: 5px;
-          overflow: hidden;
-        }
         .slick-slide div {
-          border: 1px solid black;
-          overflow: hidden;
+          outline: none;
         }
         .slick-track {
           z-index: 999;
