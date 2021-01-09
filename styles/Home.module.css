@@ -1,0 +1,122 @@
+/*
+:root {
+  --primarycolor: '#FFC122';
+  --black: '#00000';
+  --btnshadow: '0px 4px 6px rgba(0, 0, 0, 0.1)';
+}
+*/
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.banner {
+  background: #ffc122;
+  height: 40vh;
+  display: flex;
+}
+
+.homelogo {
+  padding: 15px 20px;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.btnContainer {
+  width: 80%;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.homefooter {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  text-align: center;
+}
+
+.map {
+  position: relative;
+  width: 100vw;
+  height: 65vh;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.content {
+  position: relative;
+  border-radius: 25px 25px 0px 0px;
+  background-color: #ffffff;
+  padding: 35px 50px;
+  height: 25vh;
+  z-index: 1000;
+  margin-top: -35px;
+}
+
+.content h3 {
+  font-size: 24px;
+  line-height: 2.5;
+  letter-spacing: 0.5px;
+  margin: 0px;
+}
+
+.content h5 {
+  font-size: 16px;
+  line-height: 2.5;
+  font-weight: 400;
+  margin: 0px;
+}
+
+/* Main Page */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  align-items: center;
+  color: #ffffff;
+  padding: 15px 12px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.takeaway {
+  border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.mainbanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  color: #ffc122;
+  padding: 10px 20px 55px;
+}
+
+.maincontent {
+  position: relative;
+  border-radius: 25px 25px 0px 0px;
+  background-color: #ffffff;
+  z-index: 1000;
+  margin-top: -35px;
+}
+
+.payment {
+  padding: 20px 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.payment h4 {
+  margin-bottom: 12px;
+  padding: 0px 15px;
+}
