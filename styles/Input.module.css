@@ -5,22 +5,23 @@
 
 .input input {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   border-radius: 10px;
   outline: none;
   font-size: 16px;
+  line-height: 1.5;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   border: 0;
 }
 
 .extra {
   position: absolute;
-  top: 15px;
+  top: 26px;
   right: 10px;
   font-size: 16px;
   line-height: 20px;
-  background: #f6f6f6;
-  padding-left: 8px;
+  padding-left: 10px;
+  background: #ffffff;
 }
 
 .icon {
