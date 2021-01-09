@@ -3,13 +3,15 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles.main}>
       <section className={styles.banner}>
         <img src='/banner.svg' alt='banner' width='100%' />
       </section>
-      <section className={styles.homelogo}>
-        <div><img src ='/logo_sample.png' width='43px' height='45px'/></div>
-         <div> McDonalds</div>
+      <section className={`${styles.homelogo} ${styles.contentFlex}`}>
+        <div>
+          <img src='/logo_sample.png' width='43px' height='45px' />
+        </div>
+        <h4> McDonalds</h4>
       </section>
       <section className={styles.btnContainer}>
         <Button name='Dive-in/Takeaway' link='/location' />

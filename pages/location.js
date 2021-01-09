@@ -5,7 +5,7 @@ import Map from '../component/Map';
 
 export default function Location() {
   return (
-    <div className={styles.container}>
+    <div className={styles.main}>
       <section className={styles.map}>
         <Map />
       </section>

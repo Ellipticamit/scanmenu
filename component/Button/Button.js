@@ -5,11 +5,11 @@ import styles from '../../styles/Button.module.css';
 
 function Button({name, link}) {
   return (
-    <button className={styles.btn}>
-      <Link href={link}>
-        <a>{name}</a>
-      </Link>
-    </button>
+    <Link href={link}>
+      <a>
+        <div className={styles.btn}>{name}</div>
+      </a>
+    </Link>
   );
 }
 
