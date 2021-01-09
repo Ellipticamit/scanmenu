@@ -194,3 +194,10 @@
 .price_banner{
   margin-bottom: 30px;
 }
+
+.categorycontent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap ;
+}
