@@ -3,9 +3,12 @@ import Input from '../component/Input';
 import Offers from '../component/Offers';
 import MySlider from '../component/Slider';
 import Menu from '../component/Menu';
+import Card from '../component/Card';
 
 export default function menu() {
   const offers = [1, 2, 3, 4, 5, 6];
+  const cards = [1,2,3,4];
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -48,6 +51,10 @@ export default function menu() {
         <article className={styles.paddingcontainer}>
           <div className={styles.categoriesheader}>
             <h4>All categories</h4>
+          </div>
+          <div className={styles.categorycontent}>
+            {cards.map(item => {return (<Card key={item} />)})}
+
           </div>
         </article>
       </section>
