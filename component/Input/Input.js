@@ -19,7 +19,7 @@ function Input({
       <input
         name={name}
         placeholder={placeholder}
-        style={{background: {bg}, paddingLeft: icon ? '38px' : '12px'}}
+        style={{background: {bg}, paddingRight: icon ? '38px' : '12px'}}
       />
       {extra && <div className={styles.extra}>{extra} </div>}
     </div>
