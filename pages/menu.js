@@ -3,14 +3,15 @@ import Input from '../component/Input';
 import Offers from '../component/Offers';
 import MySlider from '../component/Slider';
 import Menu from '../component/Menu';
+import MySticky from '../component/MySticky';
 import Card from '../component/Card';
 
 export default function menu() {
   const offers = [1, 2, 3, 4, 5, 6];
-  const cards = [1,2,3,4];
+  const cards = [1, 2, 3, 4, 5, 6];
 
   return (
-    <div className={styles.container}>
+    <div className={styles.main}>
       <header className={styles.header}>
         <div className=''>
           McDonalds <br /> Saket, New Delhi
@@ -48,13 +49,15 @@ export default function menu() {
             ))}
           </MySlider>
         </article>
+        <article></article>
         <article className={styles.paddingcontainer}>
           <div className={styles.categoriesheader}>
             <h4>All categories</h4>
           </div>
           <div className={styles.categorycontent}>
-            {cards.map(item => {return (<Card key={item} />)})}
-
+            {cards.map((item) => {
+              return <Card key={item} />;
+            })}
           </div>
         </article>
       </section>
