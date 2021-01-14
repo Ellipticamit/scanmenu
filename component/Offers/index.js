@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/Offers.module.css';
 
-function Offers({children}) {
+function Offers() {
   return (
     <div className={styles.offer}>
       <div className={styles.offer_item}>

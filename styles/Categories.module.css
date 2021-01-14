@@ -1,0 +1,35 @@
+.categories {
+  padding: 20px;
+}
+
+.categoriesheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoriesheader h2 {
+  color: #dadada;
+}
+
+.veg {
+  font-size: 12px;
+  margin-right: 5px;
+  line-height: 20px;
+  margin-top: -4px;
+  color: green;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.contentFlex {
+  display: flex;
+  align-items: center;
+}
+
+.categorycontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
