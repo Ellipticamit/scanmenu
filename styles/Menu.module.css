@@ -47,3 +47,20 @@
   font-weight: 700;
   font-size: 12px;
 }
+
+.menu {
+  overflow: auto;
+  width: 60%;
+  margin: 0px auto;
+  height: 50vh;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.menuitem {
+  padding: 20px 15px;
+}

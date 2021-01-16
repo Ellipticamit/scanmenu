@@ -2,16 +2,25 @@ import React from 'react';
 import styles from '../../styles/Menu.module.css';
 
 function Menu(props) {
+  const menuitem = [
+    'Sides',
+    'Beverages',
+    'Dessets',
+    'Condiments',
+    'Meal for 2',
+    'Family Meal',
+    'Dessets',
+    'Condiments',
+    'Meal for 2',
+    'Family Meal',
+  ];
   return (
-    <div className={styles.menu_btn}>
-      <div className={styles.menu_content}>
-        <div className={styles.hamburger}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div className={styles.menu_name}>Menu</div>
-      </div>
+    <div className={styles.menu}>
+      <ul>
+        {menuitem.map((item) => (
+          <li className={styles.menuitem}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }

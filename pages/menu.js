@@ -1,16 +1,29 @@
+import {useState} from 'react';
 import StickyBox from 'react-sticky-box';
 import styles from '../styles/Home.module.css';
 import {Input, InputSwitch} from '../component/Input';
-import Offers from '../component/Offers';
+import {Offers, OfferDetails} from '../component/Offers';
 import MySlider from '../component/Slider';
 import Menu from '../component/Menu';
+import MenuButtonh from '../component/MenuButton';
+import Popup from '../component/Popup';
 import Card from '../component/Card';
 import {allcategories} from '../dummyapi/index';
 import AllCategories from '../component/AllCategories';
 
 export default function menu({allcategories}) {
+  const [showPopup, setShowPopup] = useState(false);
+  const [showOfferPopup, setShowOfferPopup] = useState(false);
   const offers = [1, 2, 3, 4, 5, 6];
   const cards = [1, 2, 3, 4, 5, 6];
+
+  const handlePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
+  const handleOfferPopup = () => {
+    setShowOfferPopup(!showOfferPopup);
+  };
 
   return (
     <div className={styles.main}>
@@ -29,7 +42,7 @@ export default function menu({allcategories}) {
           background: '#ffffff',
           borderRadius: '15px 15px 0px 0px',
           marginTop: '-35px',
-          zIndex: 10000,
+          zIndex: 500,
         }}
       >
         <div className={styles.searchinput}>
@@ -51,14 +64,24 @@ export default function menu({allcategories}) {
         <MySlider>
           {offers.map((item) => (
             <div key={item}>
-              <Offers />
+              <Offers showoffer={handleOfferPopup} />
             </div>
           ))}
         </MySlider>
       </section>
       <AllCategories categoriesData={allcategories} />
 
-      <Menu />
+      <MenuButtonh handlemenu={handlePopup} />
+      {showPopup && (
+        <Popup closepopup={handlePopup}>
+          <Menu />
+        </Popup>
+      )}
+      {showOfferPopup && (
+        <Popup closepopup={handleOfferPopup}>
+          <OfferDetails />
+        </Popup>
+      )}
     </div>
   );
 }
@@ -67,6 +90,6 @@ export async function getStaticProps(context) {
   return {
     props: {
       allcategories,
-    }, // will be passed to the page component as props
+    },
   };
 }

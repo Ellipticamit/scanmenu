@@ -268,12 +268,6 @@
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.categorycontent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
 .placeorder {
   width: 100%;
