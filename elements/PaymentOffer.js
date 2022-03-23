@@ -20,11 +20,7 @@ const data = [
 ];
 
 function PaymentOffer() {
-  return (
-    <div>
-      <MySlider data={data} />
-    </div>
-  );
+  return <MySlider data={data} />;
 }
 
 export default PaymentOffer;

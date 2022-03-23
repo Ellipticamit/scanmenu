@@ -6,4 +6,12 @@ function Button({ text }) {
   );
 }
 
+export function RoundedButton({ text }) {
+  return (
+    <div className='bg-primary-500 text-black text-t cursor-pointer rounded-full hover:bg-primary-300 px-2 py-1 text-center'>
+      {text}
+    </div>
+  );
+}
+
 export default Button;

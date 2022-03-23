@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        t: '10px',
+        st: '8px',
+      },
       colors: {
         primary: {
           100: '#ffd66f',
@@ -17,8 +21,9 @@ module.exports = {
         },
         placeholder: '#ababab',
         gray: {
-          10: '#949494',
+          10: '#c4c4c4',
         },
+        blue: '#0077FF',
       },
     },
   },
